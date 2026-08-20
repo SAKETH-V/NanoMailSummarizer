@@ -1,0 +1,12 @@
+# Versions below are pinned exactly (not >=) because they've been
+# verified together with `pip check` -- Google's stack (httplib2-based)
+# and Anthropic's SDK (httpx-based) don't share dependencies, so there's
+# no real conflict risk, but pinning keeps installs reproducible instead
+# of drifting to whatever's newest on the day you `pip install`.
+google-api-python-client==2.198.0
+google-auth-httplib2==0.4.0
+google-auth-oauthlib==1.4.0
+python-dotenv==1.2.2
+pytest==9.1.1
+anthropic==0.120.2
+sqlalchemy==2.0.51
